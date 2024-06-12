@@ -1,6 +1,8 @@
 #!/bin/sh
 
-date +"%Y-%m-%d %H:%M:%S" >> aa.txt
+cdate = $(date '+%Y-%m-%d %H:%M:%S')
+
+echo "test : $cdate" >> aa.txt
 
 git add .
 git commit -m "update aa.txt "
